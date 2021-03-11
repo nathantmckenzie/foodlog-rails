@@ -6,6 +6,10 @@ class EntriesController < ApplicationController
     @entries = Entry.all
   end
 
+  def something
+    @entries = Entry.all
+  end
+
   # GET /entries/1 or /entries/1.json
   def show
   end
