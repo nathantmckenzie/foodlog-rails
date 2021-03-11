@@ -29,10 +29,11 @@
   <div class="hero-body">
     <div class="container has-text-centered">
       <p class="title">
-        Title
-      </p>
-      <p class="subtitle">
-        Subtitle
+      <% if content_for(:title) %>
+        <%= yield :title %>
+      <% else %>
+        Foodlog
+      <% end %>
       </p>
     </div>
   </div>
